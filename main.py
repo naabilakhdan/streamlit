@@ -11,7 +11,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 #page config
 st.set_page_config(
     page_title="BALINEST|Rekomendasi Wisata",
-    page_icon="images/logo.png",
+    page_icon="sistem rekomendasi\images\logo.png",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
@@ -21,7 +21,7 @@ rec_wisata = pickle.load(open('df.pkl','rb'))
 result_tfidf = pickle.load(open('resulttfidf_wisata.pkl','rb'))
 vector_tfidf = pickle.load(open('vector_tfidf.pkl','rb'))
 # Main heading
-st.image("images/logobalinest.png")
+st.image("sistem rekomendasi\images\logobalinest.png")
 st.title('REKOMENDASI WISATA DI BALI')
 
 test = st.text_input('Input keyword tempat wisata yang ingin Anda kunjungi :')
